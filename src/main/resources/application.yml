@@ -20,7 +20,8 @@ spring:
     config:
       server:
         git:
-          uri: git@gitlab.com:yujianbo/MicroService/config-repo.git
+          uri: git@github.com:yjb007/config-repo.git
+          basedir: target/config
           strict-host-key-checking: false
           ignoreLocalSshSettings: true
           privateKey: |
