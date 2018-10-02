@@ -16,44 +16,10 @@ eureka:
     healthCheckUrlPath: /admin/health
 
 spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: git@github.com:yjb007/config-repo.git
-          basedir: target/config
-          strict-host-key-checking: false
-          ignoreLocalSshSettings: true
-          privateKey: |
-                    -----BEGIN RSA PRIVATE KEY-----
-                    MIIEowIBAAKCAQEA0LOp11xLmUErIuwlg7xFnzHKmYRmZvD1WorbWoXj1WWGFU84
-                    Jm2CR4KdIutewvsLgI78hOlgfCUiXjmA7l/dHmCagyoC9eT5XDecW60bWiaYtINh
-                    7hk0GGDq4qcuoi/0vQK9JDZLRXEuV+EEX+P8M3yyzm8Wd3+i4OwHIXciIFbj0J8p
-                    F+s6rzj/aM8YunLv79DPPdZfnJ9IGJPk6itgo5nDyRNtK0lvL4DqxawyUKOHqMrG
-                    KfimfXMjQTmiTOPlGu3GPigilJJUCEqEwVuYwj9FXsOsDuT4goWDGsdhoL+b/tDv
-                    sU/RhzPmI1+U2fCH9RkJCkS0iJDjmxvLSVMb7wIBIwKCAQEAmwkfFQK70O6VEqDL
-                    aSzGATruRifXCqRefcY8jGN2DDzKATOIzBbVzrjMgFcTMcHOB7qs9QUjGmS6ceGS
-                    +jiVoYmXWh81ZjURAqz3zxLhHmXQhhh0oj6bulaf25IipF4jhRf6OChVLEVy4jIg
-                    gb9NopclvewfUXTCI22Bo9TXhbuL20aFZ2aJtIS1oXlsPuAChfo9TaTyAHwOey9H
-                    GhpPf1M/pGrG4XTyOdB5h7gmRUmQHABCn402EX8zymDpcJhUfqSUnkOKKW1VMd24
-                    BuYMXop1OQnt7rT6CofraFtXmpGv3uL9KqK4r8eprqBagTeXcBgF7keyf0jjnufl
-                    epy76wKBgQDzqE0VUF5NhKjdXEcie4BcGsllEzE3XTesCGB2hXJoIhqe69Ga9Gng
-                    nfnDETIv9cucmSyLhKfDS7F3zsubEAPpTADA+mw1nB/s7yPEwhcg23xZldd7S4/U
-                    w8MP5UnuR0ckn612mrrfFFK7N8evJJ9i0ENAE5B33uyOCuFZVv0n+QKBgQDbRhCu
-                    928zyz/yeBW9JWKQb3GhfTNsUnHXVq7dctChLrZ2k55kB1+q9O6EG1Dih2sLh3Z+
-                    f8QGt73SCWG5TLB2X4WfqcN36BB0abdb9fsYey/rhfxcxutc/1pAKQJ9a9u72nvB
-                    01dv/GgVRXFEfYZPcGatSaJ9m9XoEu6VpeVtJwKBgFqAVyUsesxV2FI4N6241+ey
-                    LYvxL4mXpvbBSGaJVmExPRZ02NMnlQpJTiPh0M/8Na8xlDPSL67wOpo23ekjNKcc
-                    OstVsyna50lgIzpz+fZC5QtU6aLS7Ee2bQXnczs/C8vGR75WunAdfdCCbr1lX8Wd
-                    z9X4o1+5M0qzlYeVVrcTAoGBAM6+Z4Blo1y4UjximCddw1T7XIJReaClgUdgW7rZ
-                    9+ht3zyZz9qn3duzvFCsCm8vOQrezs8KwCOXTJLVpUhPnxCF8wRA+iCY+ZJVC/ee
-                    yC0GbwKi5qCeS6DTgPqqUs4Gm/pDBviUEJzJaXMkN5hZGDxFaB+6dKJRGiP0l87s
-                    36FtAoGBAKCYKZnT9ziPsDJLq8C7Z4Qjdp1K0cFm1tZCllhwS7ufIGAIKnvwRF31
-                    4TqqOpyIPGeqcxWgXYlLeIXEGkEQ80nhvgqJsAvwQ2XQp2EIaoI4+NWlvx84pDlN
-                    3lH/kK/SRe9d4rjJeIMI7mWz4m8k2ttfsziPlbA4NHFa8VcMtJnz
-                    -----END RSA PRIVATE KEY-----
-
-
+  cloud.config.server.git:
+    uri: https://gitlab.com/yujianbo/MicroService/config-repo.git
+    username: yujianbo007
+    password: Yjb147258369
 
 ---
 spring:
